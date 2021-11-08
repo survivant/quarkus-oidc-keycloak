@@ -12,10 +12,12 @@ import org.acme.security.openid.connect.model.User;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
 import io.quarkus.oidc.client.filter.OidcClientFilter;
+import io.quarkus.oidc.token.propagation.AccessToken;
 
 @ApplicationScoped
 @RegisterRestClient
 @OidcClientFilter
+@AccessToken
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 @Path("/api")
