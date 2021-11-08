@@ -1,1 +1,1 @@
-# quarkus-oidc-keycloak
+Quarkus guide: https://quarkus.io/guides/security-openid-connect
