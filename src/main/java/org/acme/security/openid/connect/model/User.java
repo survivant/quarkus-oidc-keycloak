@@ -4,6 +4,10 @@ import io.quarkus.security.identity.SecurityIdentity;
 
 public class User {
 
+    public User(){
+        userName="empty";
+    }
+
     private final String userName;
 
     public User(SecurityIdentity identity) {

@@ -16,7 +16,6 @@ import io.quarkus.oidc.token.propagation.AccessToken;
 
 @ApplicationScoped
 @RegisterRestClient
-@OidcClientFilter
 @AccessToken
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
